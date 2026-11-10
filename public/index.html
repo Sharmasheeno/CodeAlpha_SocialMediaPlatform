@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feed · SocialSphere</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar"></nav>
+
+  <main class="container">
+    <div class="layout">
+      <section>
+        <div class="card hidden" id="login-prompt">
+          <h3>Welcome to SocialSphere</h3>
+          <p class="muted">You are browsing as a guest. <a href="login.html">Log in</a> or <a href="register.html">create an account</a> to post, comment, like and follow people.</p>
+        </div>
+
+        <div class="card hidden" id="composer">
+          <h3>Create a post</h3>
+          <form id="post-form">
+            <textarea id="post-text" rows="3" maxlength="1000" placeholder="What's on your mind?" required></textarea>
+            <input type="url" id="post-image" placeholder="Optional image URL (https://...)">
+            <div class="error hidden" id="post-error"></div>
+            <button class="btn" type="submit">Post</button>
+          </form>
+        </div>
+
+        <h3>Feed</h3>
+        <div id="feed"><div class="card"><p class="muted">Loading posts...</p></div></div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3>People to follow</h3>
+          <div id="people-list"><p class="muted">Loading...</p></div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/feed.js"></script>
+</body>
+</html>

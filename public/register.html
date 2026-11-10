@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register · SocialSphere</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar"></nav>
+
+  <main class="container narrow">
+    <div class="card">
+      <h2>Create your account</h2>
+      <form id="register-form">
+        <label for="displayName">Display name</label>
+        <input type="text" id="displayName" maxlength="60" placeholder="e.g. Amina Yusuf">
+        <label for="username">Username *</label>
+        <input type="text" id="username" required minlength="3" maxlength="30" autocomplete="username">
+        <label for="email">Email *</label>
+        <input type="email" id="email" required autocomplete="email">
+        <label for="password">Password * (min. 6 characters)</label>
+        <input type="password" id="password" required minlength="6" autocomplete="new-password">
+        <label for="bio">Bio</label>
+        <textarea id="bio" rows="2" maxlength="280" placeholder="Tell people a little about yourself"></textarea>
+        <div class="error hidden" id="register-error"></div>
+        <button class="btn" type="submit" style="width:100%">Register</button>
+      </form>
+      <p class="muted">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

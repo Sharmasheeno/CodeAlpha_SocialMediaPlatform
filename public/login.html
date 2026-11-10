@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in · SocialSphere</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar"></nav>
+
+  <main class="container narrow">
+    <div class="card">
+      <h2>Log in</h2>
+      <form id="login-form">
+        <label for="identifier">Email or username</label>
+        <input type="text" id="identifier" required autocomplete="username">
+        <label for="password">Password</label>
+        <input type="password" id="password" required autocomplete="current-password">
+        <div class="error hidden" id="login-error"></div>
+        <button class="btn" type="submit" style="width:100%">Log in</button>
+      </form>
+      <p class="muted">No account yet? <a href="register.html">Register</a></p>
+      <p class="muted">Demo account: demo@example.com / demo123</p>
+    </div>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
